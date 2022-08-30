@@ -18,6 +18,7 @@
   "files": [
     "package.json",
     "README.md",
+    "README.zh-CN.md",
     "LICENSE",
     "./types",
     "./lib"

@@ -2,20 +2,20 @@
 
 *_**Read this in other languages:**_*
 
-[_简体中文_](README.zh-CN.md)
+[_English_](README.md)
 
-Simple confirm dialog for Vue 3, for people who want to use confirm dialog without any UI framework to create some simple web pages
+简易的 Vue3 消息确认框，用于构建简单的Web页面
 
 ## ![demo](./demo.gif)
 
-## Features
+## 功能
 
-- Component-style supported
-- Composition-style supported
-- Typescript supported
-- Promise based API.
+- 组件式调用
+- API式调用
+- 完整的Typescript提示
+- 基于Promise，支持异步
 
-## Installation
+## 安装
 
 ```bash
 npm i simple-confirm-vue3
@@ -27,17 +27,17 @@ or
 yarn add simple-confirm-vue3
 ```
 
-import css file in main.ts
+在main.ts中引入css文件
 
 ```typescript
 import "simple-confirm-vue3/lib/style.css";
 ```
 
-## Basic Usage
+## 使用
 
-### Components style
+### 组件式调用
 
-#### Import global (component name always be "vue-confirm" while you import in global)
+#### 全局引入 (全局引入时，组件名固定为***vue-confirm***)
 
 ```typescript
 import { createApp } from "vue";
@@ -47,7 +47,7 @@ import SimpleConfirm from "simple-confirm-vue3";
 createApp(App).use(SimpleConfirm).mount("#app");
 ```
 
-##### Using
+##### 在组件中使用
 
 ```vue
 <script setup>
@@ -69,7 +69,7 @@ const showDialog = ref(false);
 </template>
 ```
 
-#### Import in single component
+#### 在单文件中引入使用
 
 ```vue
 <script setup>
@@ -92,7 +92,7 @@ const showDialog = ref(false);
 </template>
 ```
 
-### Composition Style
+### API调用
 
 ```typescript
 import { useConfirm } from "simple-confirm-vue3";
@@ -108,15 +108,16 @@ useConfirm({
   });
 ```
 
-## Properties
+## 属性
 
-|    Name     |   Type   |            Description             |
-| :---------: | :------: | :--------------------------------: |
-|    title    | string?  |                 -                  |
-|   content   |  string  |                 -                  |
-| modelValue  | boolean  |       for component v-model        |
-|   rounded   | boolean? |         is border rounded          |
-|    cross    | boolean? | is show close button on top-right  |
-| cancelText  | string?  |         cancel button text         |
-| confirmText | string?  |        confirm button text         |
-| customClass | string?  | **_custom class can't be scoped_** |
+|    Name     |   Type   |                         Description                         |
+| :---------: | :------: | :---------------------------------------------------------: |
+|    title    | string?  |                              -                              |
+|   content   |  string  |                              -                              |
+| modelValue  | boolean  |                  用于组件式调用v-model绑定                  |
+|   rounded   | boolean? |                          是否圆角                           |
+|    cross    | boolean? |                   是否展示右上角关闭按钮                    |
+| cancelText  | string?  |                        取消按钮文字                         |
+| confirmText | string?  |                        确认按钮文字                         |
+| customClass | string?  | 自定义类名**（_自定义类不能标注scoped,否则获取不到样式_）** |
+
