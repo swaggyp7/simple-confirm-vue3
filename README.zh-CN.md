@@ -15,6 +15,14 @@
 - 完整的Typescript提示
 - 基于Promise，支持异步
 
+## 文件
+
+| File                        | Size                      |
+| --------------------------- | ------------------------- |
+| style.css                   | 0.76 KiB / gzip: 0.38 KiB |
+| simple-confirm-vue3.umd.cjs | 1.76 KiB / gzip: 0.81 KiB |
+| simple-confirm-vue3.js      | 1.78 KiB / gzip: 0.72 KiB |
+
 ## 安装
 
 ```bash

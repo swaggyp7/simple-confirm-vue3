@@ -15,6 +15,14 @@ Simple confirm dialog for Vue 3, for people who want to use confirm dialog witho
 - Typescript supported
 - Promise based API.
 
+## Sizes
+
+| File                        | Size                      |
+| --------------------------- | ------------------------- |
+| style.css                   | 0.76 KiB / gzip: 0.38 KiB |
+| simple-confirm-vue3.umd.cjs | 1.76 KiB / gzip: 0.81 KiB |
+| simple-confirm-vue3.js      | 1.78 KiB / gzip: 0.72 KiB |
+
 ## Installation
 
 ```bash
