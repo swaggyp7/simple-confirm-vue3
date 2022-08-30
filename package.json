@@ -1,22 +1,41 @@
 {
   "name": "simple-confirm-vue3",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.1",
   "type": "module",
+  "main": "./lib/simple-confirm-vue3.js",
+  "keywords": [
+    "confirm",
+    "vue3",
+    "simple",
+    "dialog",
+    "prompt",
+    "vue"
+  ],
+  "license": "This project is licensed under the MIT License",
+  "files": [
+    "package.json",
+    "./types",
+    "./lib"
+  ],
+  "types": "./types/export.d.ts",
   "scripts": {
-    "serve": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "types": "tsc --declaration -p ./ -t es2015 --emitDeclarationOnly --outDir types",
+    "build": "node --trace-warnings ./build/build.cjs && yarn types"
   },
   "dependencies": {
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@types/node": "^18.7.14",
     "@vitejs/plugin-vue": "^3.0.3",
     "@vitejs/plugin-vue-jsx": "^2.0.0",
+    "i": "^0.3.7",
     "less": "^4.1.3",
+    "npm": "^8.18.0",
     "typescript": "^4.6.4",
     "vite": "^3.0.7",
+    "vite-plugin-vue-type-imports": "^0.2.1",
     "vue-tsc": "^0.39.5"
   }
 }

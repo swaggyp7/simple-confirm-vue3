@@ -1,0 +1,65 @@
+.scv-rounded {
+  border-radius: 10px;
+}
+
+.scv-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 50%);
+  top: 0;
+  left: 0;
+}
+
+.scv-dialog {
+  background: white;
+  padding: 1rem 1rem;
+  position: relative;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  .scv-head {
+    height: 1rem;
+    line-height: 1rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.2rem;
+    display: flex;
+    .scv-title {
+      flex-grow: 1;
+    }
+    .scv-close {
+      flex: none;
+    }
+  }
+  .scv-content {
+    padding: 1rem 1rem;
+  }
+  .scv-btns {
+    margin-top: 1rem;
+    text-align: right;
+    font-size: 0.75rem;
+    :not(:last-child) {
+      margin-right: 0.5rem;
+    }
+    .scv-confirm {
+      background: #35a9ff;
+      color: #ffffff;
+    }
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .scv-dialog {
+    width: 80%;
+  }
+}
+
+@media (min-width: 769px) {
+  .scv-dialog {
+    width: 30%;
+  }
+}
