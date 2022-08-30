@@ -1,7 +1,7 @@
 {
   "name": "simple-confirm-vue3",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.4",
   "type": "module",
   "main": "./lib/simple-confirm-vue3.js",
   "keywords": [
@@ -12,9 +12,13 @@
     "prompt",
     "vue"
   ],
-  "license": "This project is licensed under the MIT License",
+  "license": "MIT",
+  "repository": "https://github.com/swaggyp7/simple-confirm-vue3",
+  "homepage": "https://github.com/swaggyp7/simple-confirm-vue3",
   "files": [
     "package.json",
+    "README.md",
+    "LICENSE",
     "./types",
     "./lib"
   ],

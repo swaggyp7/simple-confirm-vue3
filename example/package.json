@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "simple-confirm-vue3": "1.0.1",
+    "simple-confirm-vue3": "1.0.3",
     "vue": "^3.2.37"
   },
   "devDependencies": {

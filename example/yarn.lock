@@ -379,10 +379,10 @@ semver@^7.3.7:
   dependencies:
     lru-cache "^6.0.0"
 
-simple-confirm-vue3@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/simple-confirm-vue3/-/simple-confirm-vue3-1.0.1.tgz#287f9838debc89cb299ca527ed1ce0db05d08d23"
-  integrity sha512-mNIFEoMOFHAI4pWEGxicgf0Rsy9PUTwBrCoBr4gUU1kL9uk7MrnXqcb2JAYpGr9syz8ZPp5DYRBBPtFB88lX+g==
+simple-confirm-vue3@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/simple-confirm-vue3/-/simple-confirm-vue3-1.0.3.tgz#3e4cd789ee823ed87e9cf6b6db642da3463d115b"
+  integrity sha512-0K5iI7p9WukDIBtuiS66JdfVnki0jGYtLJ2nwbMMqe4rYzHkK0nqGCi+y10HC1gZ8Tih2R/YztENuN9WJPWeeQ==
   dependencies:
     vue "^3.2.37"
 
